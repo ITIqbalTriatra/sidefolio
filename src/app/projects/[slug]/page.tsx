@@ -24,18 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   } else {
     return {
-      title: "Projects | John Doe",
-      description:
-        "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+      title: "Projects | Iqbal Syahbana",
+      description: "Iqbal Syahbana is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
     };
   }
 }
 
-export default function SingleProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function SingleProjectPage({ params }: { params: { slug: string } }) {
   const slug = params.slug;
   const product = products.find((p) => p.slug === slug);
 
